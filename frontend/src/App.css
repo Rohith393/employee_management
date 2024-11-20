@@ -1,0 +1,426 @@
+* {
+  background-color: rgb(33, 58, 58);
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-right: 10px;
+  color: rgb(21, 139, 218);
+}
+
+nav a.active {
+  color: white;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 43px;  
+  height: 43px; 
+  margin-right: 8px; 
+  position: absolute;
+  left: 10px; 
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.headingstyle {
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(21, 139, 218);
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.headingcomp {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container {
+  border: 2px solid rgb(89, 197, 221);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  background: transparent;
+}
+
+.gapcomp {
+  display: grid;
+  gap: 19px;
+}
+
+.inputstyles {
+  width: 100%;
+  color: white;
+  padding: 1rem 5%; 
+  margin: 0 10%;
+  border-radius: 10px;
+  border: 1px solid rgb(46, 101, 138);
+  font-size: 16px;
+}
+
+.inputstyleshomecompo {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  border-radius: 9px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+}
+
+.dropdown-container {
+  margin: 10px 0px 10px 0px;
+}
+
+.dropdown-label {
+  color: white;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.dropdown {
+  color: white;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 15px 0;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form-section{
+  color: white;
+  margin: 12px;
+}
+.checkbox-componenet{
+  margin: 3px;
+}
+.radio-group label {
+  color: white;
+  margin-right: 25px;
+  padding: 5px 0;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+.upload_image{
+  margin: 13px 6px;
+}
+.image_upload{
+  color: white;
+  margin: 9px 11px;
+}
+.imageuploadstyles {
+  margin: 30px 0px ;
+  color: white;
+}
+.button-container1{
+  margin:30px 0px;
+}
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+table img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(21, 139, 218, 0.6);
+  transition: all 0.3s ease;
+}
+
+table img:hover {
+  border-color: rgb(21, 139, 218);
+  box-shadow: 0 0 15px rgba(21, 139, 218, 0.6);
+  transform: scale(1.05);
+}
+
+table th, table td {
+  padding: 19px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: rgba(21, 139, 218, 0.2);
+}
+
+table button {
+  padding: 5px 10px;
+  margin: 0 3px;
+  cursor: pointer;
+  background-color: rgb(37, 157, 212);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttoncompo {
+  display: grid;
+  background-color: rgb(37, 157, 212);
+  padding: 1rem 3vw;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  background-color: aqua;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.display > div {
+  border: 3px solid #ffffff;
+  border-radius: 9px;
+  padding: 10px;
+  background-color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.searchfield {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.searchfield input {
+  width: 400px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 16px;
+}
+
+.searchfield input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.logout-link {
+  color: white;
+  padding: 10px;
+  transition: color 0.3s ease; 
+}
+
+.logout-link:hover {
+  color: rgb(37, 157, 212);
+}
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color:green;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .searchfield input {
+    width: 90%;
+  }
+  
+  .container {
+    margin: 0 15px;
+  }
+}
+
+.employeeheading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.employeeheading h3 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.radio-group {
+  margin: 8px 0;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 25px;
+  padding: 5px 0;
+}
+
+.checkbox-group {
+  margin: 8px 0;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.file-upload {
+  margin: 15px 0 25px 0;
+  padding: 8px 0;
+}
+
+.file-upload input[type="file"] {
+  margin: 15px 0;
+  color: white;
+}
+
+.button-container {
+  margin: 25px 0 20px 0;
+}
+
+.buttoncompo {
+  margin-bottom: 15px;
+}
+
+.message {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+/* Toast Customization */
+.Toastify__toast {
+  background-color: rgb(37, 157, 212) !important;
+  color: white !important;
+  font-family: inherit;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.Toastify__toast-container {
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.Toastify__toast-body {
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.username {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: rgb(21, 139, 218);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.username:hover {
+  background-color: rgb(37, 157, 212);
+  transition: background-color 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+  
+  .user-info {
+    margin: 10px 0;
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+}
